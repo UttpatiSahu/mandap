@@ -1,33 +1,143 @@
 <!DOCTYPE html>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>
-        <title>Unique code</title>
-        <link rel="stylesheet" type="text/css" href="wear mask.css">
+        <title>Your Mandap</title>
+        <link rel="stylesheet" type="text/css" href="mandap.css">
+        <script src="https://kit.fontawesome.com/376fd792c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1 id="head1">WEAR A MASK   <t>SAVE A LIFE</t></h1>
-        <form>
-            <div id="pg1">
-            <legend>Enter The Unique Code</legend><br>
-            <b><input id="code" placeholder="   Enter The Unique Code" name="uniquecode" required></b>
-            <button id="next"><j></j></button><br><br>
+            <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: px;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="float: left; margin-left: 10px">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#myPage" style="float: right; margin-right: 10px"><img src="https://i0.wp.com/woolly.io/wp-content/uploads/2020/04/Logo.png?fit=598%2C113&ssl=1" height="30px" width="120px"></a>
+                        <div></div>
+                    </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#Home" style="font-size: 25px;">Home</a></li>
+                                <li><a href="#Membership" style="font-size: 25px;">Membership</a></li>
+                                <li><a href="#Shop" style="font-size: 25px;">Shop</a></li>
+                                <li><a href="#Partner with us" style="font-size: 25px;">Partner with us</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        <div>
+            <div class="context">
+                <h2>Find Mandap at best prices</h2><br><br>
+                <form class="container ">
+                    <input type="text" id="fname" name="fname" placeholder="Search your location " required>
+                </form>
             </div>
-            <div id="pg2">
-            <label>Enter Full Name :   <br><input id="fname" type="text" placeholder="  Enter Full Name" name="fullname" required></label><br><br>
-            <label>Enter The Location :    <br><input id="location" type="text" placeholder="  Enter The Location" name="location" required></label><br><br>
-            <label>Enter Aadhar Number :   <br><input id="aadhar"  placeholder="  Enter Aadhar Number" name="aadharno" required></label><br><br><br>
-            <button id="submit"><b>Submit</b></button><br><br><br>
+        
+        <div class="area" >
+                    <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </ul>
+            </div >
+            <div class="slideshow-container">
+                <div class="slide">
+                    <div class="mySlides">
+                        <img src="mandap.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                        <i class="fas fa-star" style="color: white; background-color: gold; border-radius: 50px;  padding: 10px; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2;"></i>
+                      </div>
+                </div>
+              
+                <div class="mySlides">
+                  <img src="fire.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                  <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
+                </div>
+              
+                <div class="mySlides">
+                  <img src="decoration.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                  <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        </form>
-        <div id="count">
-            <label id="total">Total Count :  <c>00</c></label><br><br>
-            <label id ="date">Date :  <d>00.00.0000</d></label><br><br>
-            <label id="time">Time :  <t>00:00</t></label><br><br>
-            <label id="name">Name :  <n>0</n></label><br><br>
-            <label id="location">Location :  <l>0</l></label><br><br><br>
-            <button id="back"><k></k>  <b>Back</b></button>
+              <br>
+            
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
         </div>
-        <script src="wear mask.js"></script>
+        <br><br>
+        <div style="margin-left: 10px; font-size: 15px;">
+            <p><b style="color: white; background-color: green; border-radius: 20px; padding: 10px;"><i class="far fa-star"></i>  4.5</b> <b>50 ratings</b></p>
+        </div>
+        <div class="container-fluid">
+            <p style="font-size: 20px;"><b>NAME OF THE MANDAP</p></b></p>
+            <p style="font-size: 30px;">&#8377;  50,000</p>
+            <h3><b>Details</b></h3><hr>
+            <p style="font-size: 15px;">Capacity</p>
+            <p style="font-size: 15px;">Cleanliness</p><hr>
+            <h3>Description</h3>
+            <p>Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
+            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic 
+            modes. Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
+            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.
+            Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical
+            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.  </p>
+            <div class="mapouter"><div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
+                    marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://putlocker-is.org"></a><br>
+                <style>.mapouter{position:relative;text-align:left;height: 100%; width: 100%;}</style>
+                <a href="https://www.embedgooglemap.net">insert google map</a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;width: 100%;}</style>
+                </div>
+            </div>
+        </div>
+        <button style="background-color: rgb(245, 46, 11); width: 100%; font-size: 30px; text-align: center; position: fixed; 
+        color: white; bottom: 0px; right: 0px; left: 0px;"onclick="document.getElementById('id01').style.display='block'"><b>BOOK NOW</b></button>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br>
+          
+                <label for="uname"><b>Address</b></label><br>
+                <input type="text" placeholder="Enter Address" name="uname" required><br>
+
+                <label for="uname"><b>Phone Number</b></label><br>
+                <input type="text" placeholder="Enter Phone Number" name="uname" required><br>
+
+                <button type="submit" class="btn1">Send OTP</button><br>
+          
+                <label for="psw"><b>OTP</b></label><br>
+                <input type="password" placeholder="Enter OTP" name="psw" required><br>
+                  
+                <button type="submit" class="btn2">Submit</button>
+              </div>
+            </form>
+          </div>
     </body>
+    <script src="mandap.js"></script>
 </html>
