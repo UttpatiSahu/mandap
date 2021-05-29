@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     </head>
     <body>
             <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: px;">
@@ -32,112 +33,159 @@
                 </div>
             </nav>
         <div>
-            <div class="context">
-                <h2>Find Mandap at best prices</h2><br><br>
+            
+            <div class="context" id="dvImage"  style="display: block; height: 100vh;">
+                <h2 style="background: rgb(15, 15, 15); opacity: 80%; margin-bottom: 0px;">Find Mandap at best prices</h2>
                 <form class="container ">
-                    <input type="text" id="fname" name="fname" placeholder="Search your location " required>
+                    <input id="1" style="width: 80%; padding: 5px 10px; margin: 8px 0;" list="browsers" id="fname" name="fname" placeholder="Search your location " required>
+                        <datalist id="browsers">
+                            <option value="BAM">
+                            <option value="HYD">
+                            <option value="BNG">
+                            <option value="ADI">
+                            <option value="GURGAON">
+                          </datalist>
+                    <button class="btn3" onclick="myFunction()" ><i class="fas fa-search"></i></button>
                 </form>
             </div>
         
-        <div class="area" >
-                    <ul class="circles">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                    </ul>
-            </div >
-            <div class="slideshow-container">
-                <div class="slide">
-                    <div class="mySlides">
-                        <img src="mandap.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
-                        <i class="fas fa-star" style="color: white; background-color: gold; border-radius: 50px;  padding: 10px; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2;"></i>
-                      </div>
-                </div>
-              
-                <div class="mySlides">
-                  <img src="fire.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
-                  <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
-                </div>
-              
-                <div class="mySlides">
-                  <img src="decoration.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
-                  <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!--<div class="area" id="1" style="display: block;"></div >-->
+        <div>
+            <table id="2" style="width: 100vw; padding: 3px; margin: 2px; border: black 2px; display: none; padding-top: 40px; ">
+            <tbody>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="fire.jpg" alt="online interior design" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="mandap.jpg" alt="online interior design" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="decoration.jpg" alt="online interior design" onclick="windowImage()" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="fire.jpg" alt="online interior design" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="mandap.jpg" alt="online interior design" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%;"> <img style="width: 30vw; margin: 2px;" src="decoration.jpg" alt="online interior design" /></td>
+                <td style="width: 70%; padding: 4px;">
+                    <h4><b>xyz mandap</b></h4>
+                    <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                    <P><b>Price : </b></P>
+                </td>
+            </tr>
+            </tbody>
+            </table>
             </div>
-              <br>
-            
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-        </div>
-        <br><br>
-        <div style="margin-left: 10px; font-size: 15px;">
-            <p><b style="color: white; background-color: green; border-radius: 20px; padding: 10px;"><i class="far fa-star"></i>  4.5</b> <b>50 ratings</b></p>
-        </div>
-        <div class="container-fluid">
-            <p style="font-size: 20px;"><b>NAME OF THE MANDAP</p></b></p>
-            <p style="font-size: 30px;">&#8377;  50,000</p>
-            <h3><b>Details</b></h3><hr>
-            <p style="font-size: 15px;">Capacity</p>
-            <p style="font-size: 15px;">Cleanliness</p><hr>
-            <h3>Description</h3>
-            <p>Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
-            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic 
-            modes. Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
-            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.
-            Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical
-            modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.  </p>
-            <div class="mapouter"><div class="gmap_canvas">
-                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
-                    marginheight="0" marginwidth="0">
-                </iframe>
-                <a href="https://putlocker-is.org"></a><br>
-                <style>.mapouter{position:relative;text-align:left;height: 100%; width: 100%;}</style>
-                <a href="https://www.embedgooglemap.net">insert google map</a>
-                <style>.gmap_canvas {overflow:hidden;background:none!important;width: 100%;}</style>
-                </div>
-            </div>
-        </div>
-        <button style="background-color: rgb(245, 46, 11); width: 100%; font-size: 30px; text-align: center; position: fixed; 
-        color: white; bottom: 0px; right: 0px; left: 0px;"onclick="document.getElementById('id01').style.display='block'"><b>BOOK NOW</b></button>
-        <div id="id01" class="modal">
-  
-            <form class="modal-content animate" action="/action_page.php" method="post">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
-              </div>
-          
-              <div class="container">
-                <label for="uname"><b>Username</b></label><br>
-                <input type="text" placeholder="Enter Username" name="uname" required><br>
-          
-                <label for="uname"><b>Address</b></label><br>
-                <input type="text" placeholder="Enter Address" name="uname" required><br>
-
-                <label for="uname"><b>Phone Number</b></label><br>
-                <input type="text" placeholder="Enter Phone Number" name="uname" required><br>
-
-                <button type="submit" class="btn1">Send OTP</button><br>
-          
-                <label for="psw"><b>OTP</b></label><br>
-                <input type="password" placeholder="Enter OTP" name="psw" required><br>
+                <div class="slideshow-container" style="display: none; width: 100vw; background-color: white;" id="box1" >
+                    <div class="slide">
+                        <div class="mySlides">
+                            <img src="mandap.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                            <i class="fas fa-star" style="color: white; background-color: gold; border-radius: 50px;  padding: 10px; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2;"></i>
+                          </div>
+                    </div>
                   
-                <button type="submit" class="btn2">Submit</button>
+                    <div class="mySlides">
+                      <img src="fire.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                      <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
+                    </div>
+                  
+                    <div class="mySlides" >
+                      <img src="decoration.jpg" style="width:100%; height: 100%; position: relative; top: 0px; left: 0px;">
+                      <i class="fas fa-star" style="color: white; font-size: 30px; top: 10px; right: 10px; position: absolute; z-index: 2; background-color: gold; border-radius: 50px;  padding: 10px; "></i>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                  <div class="container-fluid" style="text-align:center; display: none; background-color: white; width: 100vw;" id="box2" >
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                </div>
+                <div class="container-fluid" style=" font-size: 15px; background-color: white; width: 100vw;">
+                    <p><b style="color: white; background-color: green; border-radius: 20px; padding: 10px;"><i class="far fa-star"></i>  4.5</b> <b>50 ratings</b></p>
+                </div>
+                <div class="container-fluid"  style="background-color: white; display: none; width: 100vw;" id="box3">
+                <p style="font-size: 20px;"><b>NAME OF THE MANDAP</p></b></p>
+                <p style="font-size: 30px;">&#8377;  50,000</p>
+                <h3><b>Details</b></h3><hr>
+                <p style="font-size: 15px;">Capacity</p>
+                <p style="font-size: 15px;">Cleanliness</p><hr>
+                <h3>Description</h3>
+                <p>Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
+                modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic 
+                modes. Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical 
+                modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.
+                Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical
+                modes, along with exposition, argumentation, and narration. In practice it would be difficult to write literature that drew on just one of the four basic modes.  </p>
+                <div class="mapouter"><div class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
+                        marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://putlocker-is.org"></a><br>
+                    <style>.mapouter{position:relative;text-align:left;height: 100%; width: 100%;}</style>
+                    <a href="https://www.embedgooglemap.net">insert google map</a>
+                    <style>.gmap_canvas {overflow:hidden;background:none!important;width: 100%;}</style>
+                </div>
+                </div>
+                </div>
+                <button style="background-color: rgb(245, 46, 11); width: 100%; font-size: 30px; text-align: center; position: fixed;display: none; width: 100vw; 
+                    color: white; bottom: 0px; right: 0px; left: 0px;"onclick="document.getElementById('id01').style.display='block' " id="box4" ><b>BOOK NOW</b></button>
+                <div id="id01" class="modal">
+      
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br>
+              
+                    <label for="uname"><b>Address</b></label><br>
+                    <input type="text" placeholder="Enter Address" name="uname" required><br>
+    
+                    <label for="uname"><b>Phone Number</b></label><br>
+                    <input type="text" placeholder="Enter Phone Number" name="uname" required><br>
+    
+                    <button type="submit" class="btn1">Send OTP</button><br>
+              
+                    <label for="psw"><b>OTP</b></label><br>
+                    <input type="password" placeholder="Enter OTP" name="psw" required><br>
+                      
+                    <button type="submit" class="btn2">Submit</button>
+                  </div>
+                </form>
               </div>
-            </form>
-          </div>
     </body>
     <script src="mandap.js"></script>
 </html>

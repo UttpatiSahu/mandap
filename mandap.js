@@ -31,6 +31,22 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         document.body.style.position = 'fixed';
-        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.top = '-${window.scrollY}px';
     }
+}
+function myFunction() {
+    document.getElementById("2").style.display = "block"
+    document.getElementById("dvImage").style.display = "none"
+    document.getElementById("2").style.backgroundColor = "white"
+}
+function windowImage() {
+  document.getElementById("box1").style.display = "block"
+  document.getElementById("box2").style.display = "block"
+  document.getElementById("box3").style.display = "block"
+  document.getElementById("box4").style.display = "block"
+  document.getElementById("2").style.display = "none"
+  document.getElementById("dvImage").style.display = "none"
+  document.getElementById("box").style.backgroundColor = "white"
+  document.getElementById("box2").style.backgroundColor = "white"
+  document.getElementById("box3").style.backgroundColor = "white"
 }

@@ -6,7 +6,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 .buttonwrapper {
   display: inline-block;
 }
@@ -31,13 +30,13 @@ body{
 .context {
     width: 100%;
     position: absolute;
-    top: 30vh;
-    
 }
 
 .context h2{
     text-align: center;
     color: #fff;
+    padding-bottom: 30px;
+    padding-top: 40vh;
 }
 
 
@@ -46,11 +45,10 @@ body{
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100vh;
-    z-index: 3;
    
 }
 
-.circles{
+/*.circles{
     position: absolute;
     top: 0;
     left: 0;
@@ -145,7 +143,7 @@ body{
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
-}
+}*/
 
 
 
@@ -330,7 +328,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-.btn1, .btn2 {
+.btn1, .btn2, .btn3 {
   background-color: #04AA6D;
   color: white;
   padding: 6px 10px;;
@@ -339,7 +337,7 @@ input[type=text], input[type=password] {
   cursor: pointer;
 }
 
-.btn1, .btn2:hover {
+.btn1, .btn2, .btn3:hover {
   opacity: 0.8;
 }
 
@@ -440,3 +438,40 @@ span.psw {
      width: 100%;
   }
 }
+html {
+	height: 100%;
+	/* max-height: 600px; */
+	width: 200px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		/*url('clipart2279958.png'),*/
+		url('mandap.jpg'),
+    url('mehendi.png'),
+    url('clipart2279958.png'),
+		url('mandap.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 0%,
+		0 100%,
+		0 10%,
+		0 100%,
+		0 0;
+	background-size: 
+		900px,
+		700px,
+		500px 450px,
+		600px,
+		700px 750px;
+	animation: 50s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-2000px 0%,
+			-2000px 100%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
